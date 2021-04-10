@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Navigations.SecondPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Second Page">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label
+            x:Name="lblResult"
+            HorizontalOptions="Center"
+            Text="Second Page" />
+        <Label HorizontalOptions="Center" Text="{Binding Name}" />
+        <Label HorizontalOptions="Center" Text="{Binding Decription}" />
+        <Button Clicked="Handle_Click" Text="Third Page" />
+        <Button Clicked="Previus_Click" Text="Previus Page" />
+    </StackLayout>
+</ContentPage>
